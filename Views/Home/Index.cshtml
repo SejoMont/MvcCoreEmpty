@@ -1,0 +1,28 @@
+﻿@section styles {
+    <style>
+        .contendor-vista{
+            margin: 10px;
+        }
+    </style>
+}
+
+<div class="contendor-vista">
+    <h1 style="color:slateblue" id="mensajevista">
+        Estoy en casita..
+    </h1>
+
+    <button id="botonvista" class="btn btn-outline-dark">
+        Mensaje en View Index
+    </button>
+</div>
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#botonvista").click(function () {
+                $("#mensajevista").text("Nuevo mensaje en INDEX VIEW!!!!");
+            })
+        })
+    </script>
+}
